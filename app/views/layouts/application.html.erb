@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<% if @cms_page.label == "Home" %>
+<% if @cms_page && @cms_page.label == "Home" %>
 	<%= render '/layouts/home' %>
 <% else %>
 	<%= render '/layouts/page' %>
