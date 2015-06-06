@@ -1,0 +1,17 @@
+@import 'variables';
+
+body.page{
+	background-color: $offwhite;
+	color: $dark_gray;
+	h1{color: $dark_gray;}
+	a{color: $gray;}
+	a:visied{color: $light_gray;}
+}
+.menu{
+	.menu-item{
+		display:block;
+	}
+}
+.left-side{
+	padding:5% 10% !important;
+}
