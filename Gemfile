@@ -11,6 +11,7 @@ gem 'comfortable_mexican_sofa', '~> 1.12.0'
 gem 'paperclip'
 gem 'rmagick'
 gem 'kaminari'
+gem 'cms-fortress', '~> 1.3.6'
 
 group :development, :test do
   gem 'byebug'

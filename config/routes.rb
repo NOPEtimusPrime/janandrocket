@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  cms_fortress_routes :path => '/cms-admin'
+
   namespace :admin do
     resources :episodes
   end
