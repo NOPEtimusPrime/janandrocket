@@ -21,4 +21,5 @@ end
 
 group :production do 
 	gem 'pg'
+	gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 end
