@@ -1,6 +1,9 @@
-<div class="page-header">
+<div class="page-header small-12 medium-12 large-12 columns">
   <h1>Episode <%= @episode.id %>: <%= @episode.title %></h1>
 </div>
-<div class="content">
+<div class="content small-12 medium-12 large-12 columns">
 	<%= @episode.content.html_safe %>
+</div>
+<div class="prev-next small-12 medium-12 large-12 columns">
+	<%= nav_arrows(@id) %>
 </div>

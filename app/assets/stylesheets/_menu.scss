@@ -1,0 +1,26 @@
+@import 'variables';
+
+#menu{
+	position: fixed;
+    padding: 10px 0 5% 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: $offwhite;
+    padding: 5px 0 10px !important;
+    background: $dark_gray;
+    a{color: $offwhite !important;}
+	.nav{
+		text-align: center;
+		.menu-item{
+			display: inline-block;
+			margin: 0 3%;
+			font-size: 0.8rem;
+			a{color: $dark_gray;}
+		}
+	}
+}
+.page-header, .page-heading{
+	margin-top: 120px;
+    position: relative;
+}

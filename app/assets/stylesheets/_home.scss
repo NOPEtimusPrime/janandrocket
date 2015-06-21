@@ -23,10 +23,15 @@
 	position: absolute;
 	top: 100%;
 	height: 100%;
+	width: 100%;
 	font-family: $oxygen;
 	background: $offwhite;
-	.episode{
+	.home-episode{
 		padding: 5% 10%;
 		color: $dark_gray;
+		p{
+			font-size: 1.25rem;
+		    line-height: 2.25rem;
+		}
 	}
 }

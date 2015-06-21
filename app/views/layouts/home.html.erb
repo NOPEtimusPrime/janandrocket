@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Adventures of Jan and Rocket</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,700|Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:400,500,700,900' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div id="banner">
+	<div class="row">
+		<div class="small-12 medium-12 large-12 columns">
+			<div class="row">
+				<div class="small-1 medium-1 large-1 columns"></div>
+				<div class="small-11 medium-11 large-11 columns">
+					<h1>The Adventures of Jan and Rocket</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-1 medium-2 large-2 columns"></div>
+				<div class="small-11 medium-10 large-10 columns">
+					<span class="banner-link current-episode"><a href="#current">Current Episode: <%= Episode.last.title %></a></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-1 medium-2 large-2 columns"></div>
+				<div class="small-11 medium-10 large-10 columns">
+					<span class="banner-link archive"><%= link_to("Past Episodes", episodes_path) %></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="episode-container">
+	<div class="row">
+		<div class="home-episode small-12 medium-12 large-12 columns">
+			<a name="current"></a>
+			<%= Episode.last.content.html_safe %>
+		</div>
+	</div>
+</div>
+</body>
+</html>
