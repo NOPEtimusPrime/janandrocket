@@ -5,8 +5,6 @@ Rails.application.routes.draw do
     resources :episodes
   end
 
-  root :to => "cms/content#show"
-
   resources :episodes
 
   comfy_route :cms_admin, :path => '/admin'
