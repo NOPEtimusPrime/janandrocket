@@ -2,7 +2,6 @@
 
 body.episode{
 	font-family:$oxygen;
-	background-color: $offwhite;
 	color: $dark_gray;
 	padding: 0 10%;
 	h1{
@@ -19,7 +18,12 @@ body.episode{
 .back a, .forward a{
 	display: inline-block;
 	font-size: 3rem;
+	color: $gray;
+	&:visited{color: $light_gray;}
 }
 .back{float: left;}
 .forward{float:right;}
 .oldest, .newest{pointer-events: none;}
+.comments{
+	background-color: $offwhite;
+}

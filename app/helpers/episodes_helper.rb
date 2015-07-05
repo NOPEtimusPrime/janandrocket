@@ -22,4 +22,9 @@ module EpisodesHelper
 		return html.html_safe
 	end
 
+	def show_current
+		@episode = Episode.last
+		@id = @episode.id
+		render 'episodes/current'
+	end
 end

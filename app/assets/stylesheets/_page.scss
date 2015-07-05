@@ -1,11 +1,10 @@
 @import 'variables';
 
 body.page{
-	background-color: $offwhite;
 	color: $dark_gray;
 	h1{color: $dark_gray;}
 	a{color: $gray;}
-	a:visied{color: $light_gray;}
+	a:visited{color: $light_gray;}
 }
 .menu{
 	.menu-item{
