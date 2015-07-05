@@ -5,6 +5,18 @@
 	<%= @episode.content.html_safe %>
 </div>
 <div class="prev-next small-12 medium-12 large-12 columns">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.oldest').click(function(e){
+				alert("You're already at the oldest episode.");
+				e.preventDefault();
+			});
+			$('.newest').click(function(e){
+				alert("You're already at the newest episode.");
+				e.preventDefault();
+			});
+		});
+	</script>
 	<%= nav_arrows(@id) %>
 </div>
 <div class="comments small-12 medium-12 large-12 columns">
@@ -15,9 +27,9 @@
 	    
 	    /* * * DON'T EDIT BELOW THIS LINE * * */
 	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	    })();
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>

@@ -21,9 +21,26 @@ body.episode{
 	color: $gray;
 	&:visited{color: $light_gray;}
 }
-.back{float: left;}
-.forward{float:right;}
-.oldest, .newest{pointer-events: none;}
+.back, .oldest{
+	float: left;
+	position: fixed;
+	left: 4%;
+    top: 45%;
+    width: 25px;
+    height: 50px;
+    background-image: url('/assets/arrow-back.png');
+    background-size: contain;
+}
+.forward, .newest{
+	float:right;
+	position: fixed;
+	right: 4%;
+	top: 45%;
+    width: 25px;
+    height: 50px;
+    background-image: url('/assets/arrow-forward.png');
+    background-size: contain;
+}
 .comments{
 	background-color: $offwhite;
 }
