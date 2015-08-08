@@ -57,6 +57,6 @@ protected
   end
 
   def episode_params
-    params.fetch(:episode, {}).permit(:title, :content)
+    params.fetch(:episode, {}).permit(:title, :content, :is_published)
   end
 end

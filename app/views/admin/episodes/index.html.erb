@@ -7,12 +7,16 @@
   <tr>
     <th></th>
     <th class="main">Title</th>
+    <th>Published?</th>
     <th></th>
   </tr>
   <% @episodes.each do |episode| %>
     <tr>
       <td>#<%= episode.id %></td>
       <td class="main"><%= episode.title %></td>
+      <td>
+        <%= episode.is_published %>
+      </td>
       <td>
         <div class="btn-group btn-group-sm">
           <%= link_to 'Edit', edit_admin_episode_path(episode), :class => 'btn btn-default' %>

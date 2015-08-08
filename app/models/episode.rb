@@ -16,6 +16,8 @@ class Episode < ActiveRecord::Base
 
 
   # -- Instance Methods -----------------------------------------------------
-
+  def published
+  	
+  end
 
 end

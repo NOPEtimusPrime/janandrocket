@@ -23,7 +23,7 @@ module EpisodesHelper
 	end
 
 	def show_current
-		@episode = Episode.last
+		@episode = Episode.where(:is_published => 1).last
 		@id = @episode.id
 		render 'episodes/current'
 	end
