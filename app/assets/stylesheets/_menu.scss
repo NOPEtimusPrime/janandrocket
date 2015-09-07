@@ -2,14 +2,18 @@
 
 #menu{
 	position: fixed;
-    padding: 10px 0 5% 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    background: $offwhite;
-    padding: 5px 0 10px !important;
-    background: $dark_gray;
-    a{color: $offwhite !important;}
+  padding: 10px 0 5% 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: $offwhite;
+  padding: 5px 0 10px !important;
+  background: $dark_gray;
+  a{color: $offwhite !important;}
+  .home-link{
+  	float: left;
+  	margin-left: 2rem;
+  }
 	.nav{
 		text-align: center;
 		.menu-item{
@@ -22,5 +26,5 @@
 }
 .page-header, .page-heading{
 	margin-top: 120px;
-    position: relative;
+  position: relative;
 }
