@@ -16,7 +16,7 @@ module EpisodesHelper
 		unless forward > Episode.last.id
 			html << link_to("", Episode.find(forward), {:class => "forward"})
 		else
-			html << link_to("", "", {:class => "newest"})
+			html << link_to("", "#", {:class => "newest"})
 		end
 		html << %Q{</span>}
 		return html.html_safe
