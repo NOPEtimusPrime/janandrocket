@@ -1,6 +1,6 @@
 <div class="page-heading"><h1>Previous Episodes</h1></div>
 <div class="episodes-list">
 	<% @episodes.each do |episode| %>
-		<div class="episode">#<%= episode.id %>: <%= link_to(episode.title, episode_path(episode)) %></div>
+		<div class="episode"><%= link_to(episode.title, episode_path(episode)) %></div>
 	<% end %> 
 </div>
