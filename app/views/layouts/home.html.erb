@@ -20,22 +20,15 @@
 					<h1>The Adventures of Jan and Rocket</h1>
 				</div>
 			</div>
-			<div class="row">
-				<div class="small-1 medium-2 large-2 columns"></div>
-				<div class="small-11 medium-10 large-10 columns">
-					<span class="banner-link current-episode"><%= link_to("Current Episode", Episode.where(:is_published => 1).last) %></a></span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-1 medium-2 large-2 columns"></div>
-				<div class="small-11 medium-10 large-10 columns">
-					<span class="banner-link current-episode"><%= link_to("Start at the Beginning", Episode.first) %></span>
-				</div>
-			</div>
-			<div class="row">
-				<div class="small-1 medium-2 large-2 columns"></div>
-				<div class="small-11 medium-10 large-10 columns">
-					<span class="banner-link archive"><%= link_to("Past Episodes", episodes_path) %></span>
+			<div class="row show-for-large-up">
+				<div class="large-12 columns">
+					<ul id="home-nav">
+						<li class="banner-link"><%= link_to("Current Episode", Episode.where(:is_published => 1).last) %></li>
+						<li class="banner-link"><%= link_to("Start at the Beginning", Episode.first) %></li>
+						<li class="banner-link"><%= link_to("Past Episodes", episodes_path) %></li>
+						<li class="banner-link"><a href="/terminology">Terminology</a></li>
+						<li class="banner-link"><a href="/characters">Characters</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
